@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+html {
+  background: #222 url("../img/amirali-mirhashemian-9hIJ4ZLMnZA-unsplash.jpg") no-repeat center/cover;
+  background-image: url("../img/call-me-hangry-CspPycdSs2E-unsplash.jpg");
+  background-image: url("../img/ilya-mashkov-_qxbJUr9RqI-unsplash.jpg");
+  background-image: url("../img/mae-mu-I7A_pHLcQK8-unsplash.jpg");
+}
+body {
+  background: rgba(0,0,0,0.25);
+  color: #e4e4e4;
+  display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: flex-start;
+  margin: 0 auto;
+  padding: 2em 0;
+  min-height: 100vh;
+}
+
+/* ---------------------------------------------
+ * TEXT STYLING
+ * --------------------------------------------- */
+
+  /* HEADERS */
+  h1, h2, h3, h4 {
+    font-family: 'Merienda', cursive;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+    h1 { font-size: 2.75em; margin-bottom: 0; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.25em;}
+
+  /* CONTENT */
+  body, input, button { 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+  }
+
+/* ---------------------------------------------
+ * LINK STYLING
+ * --------------------------------------------- */
+  
+  a { text-decoration: none; }
+  a:hover { }
+
+/* ---------------------------------------------
+ * Button STYLING
+ * --------------------------------------------- */
+
+  button {
+    background: rgba(200, 50, 50, 0.5);
+    color: white;
+    display: inline-flex;
+      align-content: center;
+      justify-content: center;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  button:hover {
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+  }
+
+/* ---------------------------------------------
+ * ICON STYLING
+ * --------------------------------------------- */
+  
+  .material-icons { transition: none; }
+
+  .material-icons::before { 
+    display: flex;
+    font-family: 'Material Icons';
+    font-size: 1.5rem; 
+    font-style: normal;
+    font-weight: normal;
+    transition: none;
+  }
+
+  .delete .material-icons::before {
+    content: "delete_outline";
+  }
+  .delete:hover .material-icons::before {
+    content: "delete";
+  }
+  .rate .material-icons::before {
+    content: "star_border";
+  }
+  .rate .material-icons:hover::before,
+  .rating materials-icons:hover ~ material-icons::before{
+    content: "star";
+  }
+/* ---------------------------------------------
+ * LAYOUT STYLING
+ * --------------------------------------------- */
+
+header, footer {
+  text-align: center;
+}
+main {
+  margin: 0 auto;
+  width: 90%;
+    max-width: 1200px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* ---------------------------------------------
+ * MAIN SECTION STYLING
+ * --------------------------------------------- */
+  /* SECTION STYLING */
+  section {
+    margin: 2em auto;
+  }
+
+  /* BORDERS */
+  #add-burger, #add-valid,
+  form input, form button,
+  .panel, .burger,
+  .action button, .review {
+    border: 0.1em solid white;
+    border-radius: 0.5em;
+  }
+
+
+/* ---------------------------------------------
+ * ADD A BURGER STYLING
+ * --------------------------------------------- */
+
+  #add-burger {
+    display: flex;
+      flex-flow: column;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  form {
+    display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  form label {
+    flex: 1 1 auto;
+    margin: 0 1em;
+    max-width: 30em;
+  }
+    form input { 
+      background: none;
+      border-color: transparent;
+        border-bottom-color: white; 
+        border-radius: 0;
+      color: white;
+      flex-grow: 1;
+      padding: 0.5em;
+      text-align: center;
+      width: 100%;
+    }
+      form input::placeholder { color: white;}
+  form button {
+    flex-basis: auto;
+    margin: 0 1em;
+    padding: 0.5em 2em;
+  }
+
+  #add-valid {
+    background: rgba(255, 255, 255, 0.25);
+    display: none;
+    margin: 0 auto;
+      margin-top: 1em;
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+    #add-valid.active { display: inline-block; }
+
+/* ---------------------------------------------
+ * BURGER BUCKET LISTS
+ * --------------------------------------------- */
+
+  /* SECTION STYLING */
+  #burger-list {
+    display: flex;
+      flex-flow: row;
+  }
+
+  /* PANEL STYLING */
+  .panel {
+    flex: 1 1 40%;
+    padding: 1em 2em;
+  }
+    .panel:first-of-type { margin-right: 2em;}
+
+  /* BURGER DIV STYLING */
+  .burger {
+    background: rgba(255, 255, 255, 0.25);
+    background: rgba(0,0,0,0.5);
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    margin: 1em auto;
+    padding:1em;
+  }
+    .burger h3 {
+      line-height: 2rem;
+      margin: 0 0.5rem;
+    }
+    .action {
+      display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      margin: 0 0.25em;
+    }
+      .action button {       
+        padding: 0.25em 0.5em;
+        margin: auto 0.25em;
+      }
+      .action .delete {
+        padding: 0.25em;
+      }
+    .review {
+      display: flex;
+        flex-direction: column;
+      margin-top: 1em;
+      padding: 1em;
+      width: 100%;
+      /* Temporary */
+      display: none;
+    }
+    .rate {
+      text-align: center;
+    }
+
+/* ---------------------------------------------
+ * MEDIA QUERIES
+ * --------------------------------------------- */
+
+  @media screen and (max-width: 1280px) {
+    .burger {
+      flex-flow: column;
+    }
+    .action {
+      margin: 0.5em 0;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    h1 { font-size: 2.25em }
+    h2 { font-size: 1.75em}
+    h3 { font-size: 1.25em}
+  }
+
+  @media screen and (max-width: 640px) {
+    #add-burger form, #burger-list {
+      flex-flow: column;
+    }
+    #add-burger form button { margin-top: 1em; }
+    .panel:first-of-type {
+      margin-right: 0;
+      margin-bottom: 2em;
+    }
+    .burger {
+      flex-flow: row;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Burger column */
+    .burger { flex-flow: column; }
+  }

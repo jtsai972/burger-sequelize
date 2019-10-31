@@ -1,0 +1,40 @@
+
+<header>
+  <h1>Burger Bucket List</h1>
+</header>
+
+<main>
+  <section id="add-burger">
+    <h2>Add a New Burger</h2>
+    <form>
+      <label for="new-burger">
+        <input id="new-burger" type="text" name="burger" placeholder="Add a Burger">
+      </label>
+      <button>Add This Burger</button>
+    </form>
+    <div id="add-valid"></div>
+  </section>
+
+  <section id="burger-list">
+    <div id="uneaten" class="panel">
+      <h2>Burgers to Try</h2>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block}}
+        {{/unless}}
+      {{/each}}
+    </div>
+    <div id="eaten" class="panel">
+      <h2>Burgers I've Eaten</h2>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block}}
+        {{/if}}
+      {{/each}}
+    </div>
+  </section>
+</main>
+
+<footer>
+
+</footer>
