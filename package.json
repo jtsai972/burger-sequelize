@@ -1,7 +1,7 @@
 {
-  "name": "burger",
+  "name": "burger-sequelize",
   "version": "1.0.0",
-  "description": "<!--# burger Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat. -->",
+  "description": "<!--# Burger Bucket List is a site that allows people to input the names of burgers they'd like to eat. -->",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
