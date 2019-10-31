@@ -83,7 +83,7 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-You can try this out on [Heroku](https://glacial-oasis-67567.herokuapp.com/)
+<!-- You can try this out on [Heroku](https://glacial-oasis-67567.herokuapp.com/) -->
 
 Command to run this program is `node server` in the root directory of this program. (The one with the server.js file)
 
