@@ -16,11 +16,10 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
     Time to throw out the homemade orm and replace it with sequelize!
     <br />
     <a href="https://github.com/jtsai972/burger-sequelize"><strong>Explore the docs »</strong></a>
+    ·
+    <a href="https://jtsai972-burger-sequelize.herokuapp.com/"><strong>Try it out on Heroku »</strong></a>
     <br />
     <br />
-    <!-- <a href="https://glacial-oasis-67567.herokuapp.com/"><strong>Try it out on Heroku »</strong></a>
-    <br />
-    <br /> -->
     <a href="https://github.com/jtsai972/burger-sequelize/issues">Report Bug</a>
     ·
     <a href="https://github.com/jtsai972/burger-sequelize/issues">Request Feature</a>
@@ -110,7 +109,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Project Link: [https://github.com/jtsai972/burger-sequelize](https://github.com/jtsai972/burger-sequelize)
 
-<!-- Heroku Link: [Heroku App](https://whispering-plains-97873.herokuapp.com/) -->
+Heroku Link: [Heroku App](https://jtsai972-burger-sequelize.herokuapp.com/)<!-- Was bloodcurdling mansion -->
 
 [Back to Table of Contents](#table-of-contents)
 
