@@ -82,7 +82,7 @@ npm install
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-<!-- You can try this out on [Heroku](https://glacial-oasis-67567.herokuapp.com/) -->
+You can try this out on [Heroku](https://jtsai972-burger-sequelize.herokuapp.com/)
 
 Command to run this program is `node server` in the root directory of this program. (The one with the server.js file)
 
@@ -109,7 +109,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Project Link: [https://github.com/jtsai972/burger-sequelize](https://github.com/jtsai972/burger-sequelize)
 
-Heroku Link: [Heroku App](https://jtsai972-burger-sequelize.herokuapp.com/)<!-- Was bloodcurdling mansion -->
+Heroku Link: [Heroku App](https://jtsai972-burger-sequelize.herokuapp.com/)<!-- Was https://git.heroku.com/bloodcurdling-mansion-32113.git -->
 
 [Back to Table of Contents](#table-of-contents)
 
