@@ -16,7 +16,7 @@ Eat-Da-Burger! is a restaurant app that lets users input the names of burgers th
     Time to throw out the homemade orm and replace it with sequelize!
     <br />
     <a href="https://github.com/jtsai972/burger-sequelize"><strong>Explore the docs »</strong></a>
-    ·
+    <br />
     <a href="https://jtsai972-burger-sequelize.herokuapp.com/"><strong>Try it out on Heroku »</strong></a>
     <br />
     <br />
