@@ -25,20 +25,24 @@ module.exports = function(app) {
   
   // * HANDLING PUT REQUEST:
   app.put("/api/burgers/:id", function(req, res) {
-    db.Burger
-      .update(
-        req.body, 
-        req.params.id, 
-        function(result) {
-          return result.changedRows === 0 ? 
-            res.status(404).end() : 
-            res.status(200).end();
-        })
+    console.log("REQUEST: " + req.body);
+    db.Burger.update(
+      {devoured: 1},
+      { where: {id: req.params.id} }
+    )
+      .then( function(result) {
+        return result.changedRows === 0 ? 
+          res.status(404).end() : 
+          res.status(200).end();
+      })
+        
   });
   
   // * HANDLING DELETE REQUEST:
   app.delete("/api/burgers/:id", function(req, res) {
-    burger.delete(req.params.id, function(result) {
+    db.Burger
+      .destroy({where: {id: req.params.id}})
+      .then( function(result) {
       return result.changedRows === 0 ? 
           res.status(404).end() : 
           res.status(200).end();
